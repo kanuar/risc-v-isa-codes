@@ -9,13 +9,13 @@ dndzero:
     li a1,1
     li a2,0
     li a3,0
-    j end
+    j ender
 
 divzero:
     li a1,-1
     li a2,0
     li a3,0
-    j end
+    j ender
 
 convdnd:
 	li a1,-1
