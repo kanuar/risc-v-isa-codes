@@ -18,13 +18,11 @@ divzero:
     j ender
 
 convdnd:
-	li a1,-1
-	mul x1,x1,a1
+	sub x1,x0,x1
 	j back
 
 convdiv:
-	li a1,-1
-	mul x2,x2,a1
+	sub x2,x0,x2
 	j back 
 
 
@@ -50,13 +48,11 @@ loop:
 	j loop
 negcheck:
     beq x5,x0,end
-    li a1,-1
-    mul a2,a2,a1
+    sub a2,x0,a2
     j end
 
 flag:
-    li x8,-1
-    mul a3,a3,x8
+    sub a3,x0,a3
     j ender
 
 rem:
