@@ -1,7 +1,7 @@
 .data
 
 k: .string "abcbad"
-stk: .word 0x120
+stk: .word 0x12000000
 
 .text
 lw sp,stk
