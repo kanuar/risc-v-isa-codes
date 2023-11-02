@@ -25,7 +25,7 @@ loop:
     addi x1,x1,1
     addi x2,x2,1
     xor x6,x5,x4
-    andi x6,x6,1
+    sgt x6,x6,x0
     bne x6,x0,res
     j loop
 res:
